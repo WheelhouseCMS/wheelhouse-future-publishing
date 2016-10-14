@@ -1,0 +1,4 @@
+- if resource.respond_to?(:publish_at)
+  = sidebar_expander :publishing_options do
+    = field :publish_at, :label => "Publish at" do
+      = form.datetime :publish_at
